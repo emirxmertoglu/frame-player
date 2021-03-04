@@ -1,0 +1,40 @@
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 650px;
+      -webkit-appearance: none;
+      background-color: #C5C5C5;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 20px;
+      -webkit-appearance: none;
+      color: #9FFE9B;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 20px;
+      -webkit-appearance: none;
+      height: 20px;
+      cursor: ew-resize;
+      background: #9FFE9B;
+      box-shadow: -650px 0 0 650px #9FFE9B;
+    }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #9FFE9B; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #C5C5C5;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #9FFE9B; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #C5C5C5;
+}
